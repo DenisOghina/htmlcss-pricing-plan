@@ -10,6 +10,9 @@ body {
 
 .feature-list {
     list-style: none;
+    /* Bonus - feature-list su due colonne */
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .container {
@@ -25,7 +28,7 @@ body {
 }
 
 .card {
-    padding: 20px;
+    padding: 30px;
     box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.10);
     border-radius: 8px;
     flex-basis: calc(100% / 3 - (20px * 2) / 3);
@@ -34,11 +37,96 @@ body {
 }
 
 header {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     display: flex;
     flex-wrap: wrap;
 }
 
 .toggle {
     margin-left: auto;
+}
+
+header p,
+.toggle {
+    color: gray;
+}
+
+.toggle i {
+    color: black;
+}
+
+.card h2+span {
+    color: gray;
+    font-size: 0.9rem;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.price {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.price span {
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+
+.price span:last-child {
+    color: gray;
+    font-size: 1rem;
+}
+
+.discount {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.discount span {
+    background-color: #e5e7eb;
+    padding: 5px;
+    border-radius: 6px;
+}
+
+button {
+    padding: 15px;
+    width: 100%;
+    background-color: #6500FF;
+    color: white;
+    font-weight: bold;
+    border-radius: 15px;
+    border: none;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.feature-list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+    /* Bonus - feature-list su due colonne */
+    flex-basis: calc(100% / 2);
+    min-width: 260px;
+}
+
+.professional-card {
+    background-color: #6500FF;
+    color: white;
+}
+
+.professional-card h2+span,
+.professional-card .price span:last-child {
+    color: white;
+}
+
+.professional-card .discount span {
+    color: black;
+}
+
+.professional-card button {
+    background-color: white;
+    color: #6500FF;
 }
