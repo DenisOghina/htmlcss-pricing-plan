@@ -7,3 +7,38 @@
 body {
     font-family: "Roboto", sans-serif;
 }
+
+.feature-list {
+    list-style: none;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    padding: 20px;
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.10);
+    border-radius: 8px;
+    flex-basis: calc(100% / 3 - (20px * 2) / 3);
+    min-width: 300px;
+    flex-grow: 1;
+}
+
+header {
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.toggle {
+    margin-left: auto;
+}
